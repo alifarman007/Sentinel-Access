@@ -1,0 +1,25 @@
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=face_attendance
+DB_USER=postgres
+DB_PASSWORD=123456
+
+# Model Configuration
+DETECTION_MODEL=det_10g.onnx
+RECOGNITION_MODEL=w600k_r50.onnx
+
+# Recognition Settings
+RECOGNITION_THRESHOLD=0.4
+DETECTION_CONFIDENCE=0.5
+USE_GPU=true
+
+# Camera Settings
+MAX_CAMERAS=4
+TARGET_FPS=15
+FRAME_BUFFER_SIZE=3
+RTSP_LATENCY=100
+
+# Attendance Settings
+DEDUP_INTERVAL_MINUTES=60
+ENABLE_EXIT_TRACKING=false
