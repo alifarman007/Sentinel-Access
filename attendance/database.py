@@ -16,7 +16,7 @@ from attendance.models import Base
 
 # Create engine with connection pooling
 engine = create_engine(
-    settings.DATABASE_URL,
+    settings.database_url,
     poolclass=QueuePool,
     pool_size=5,
     max_overflow=10,

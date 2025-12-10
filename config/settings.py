@@ -1,8 +1,9 @@
 """
-Application Settings - Centralized Configuration
+Application Settings
+
+Centralized configuration using Pydantic Settings.
 """
 
-import os
 from pathlib import Path
 from typing import Optional
 from pydantic_settings import BaseSettings
@@ -10,48 +11,40 @@ from pydantic import Field
 
 
 class Settings(BaseSettings):
-    """Application settings loaded from environment variables."""
+    """Application settings loaded from environment variables and .env file."""
     
     # Base paths
-    BASE_DIR: Path = Path(__file__).resolve().parent.parent
-    MODELS_DIR: Path = Field(default=Path("models"))
-    DATA_DIR: Path = Field(default=Path("data"))
+    BASE_DIR: Path = Path(__file__).parent.parent
     
-    # Database
-    DATABASE_URL: str = Field(
-        default="postgresql://postgres:postgres@localhost:5432/face_attendance"
-    )
+    # Database settings
+    DB_HOST: str = "localhost"
+    DB_PORT: int = 5432
+    DB_NAME: str = "face_attendance"
+    DB_USER: str = "postgres"
+    DB_PASSWORD: str = ""
     
-    # Model paths (relative to MODELS_DIR)
-    DETECTION_MODEL: str = Field(default="det_10g.onnx")
-    RECOGNITION_MODEL: str = Field(default="w600k_r50.onnx")
+    # Model settings
+    DETECTION_MODEL: str = "det_10g.onnx"
+    RECOGNITION_MODEL: str = "w600k_r50.onnx"
     
     # Recognition settings
-    DETECTION_CONFIDENCE: float = Field(default=0.5, ge=0.1, le=1.0)
-    RECOGNITION_THRESHOLD: float = Field(default=0.4, ge=0.1, le=1.0)
-    USE_GPU: bool = Field(default=True)
-    
-    # Face detection settings
-    DETECTION_INPUT_SIZE: tuple = (640, 640)
-    NMS_THRESHOLD: float = Field(default=0.4)
-    
-    # Attendance settings
-    DEDUP_INTERVAL_MINUTES: int = Field(default=60, ge=1)
-    ENABLE_EXIT_TRACKING: bool = Field(default=False)
+    RECOGNITION_THRESHOLD: float = 0.4
+    DETECTION_CONFIDENCE: float = 0.5
+    USE_GPU: bool = True
     
     # Camera settings
-    MAX_CAMERAS: int = Field(default=8)
-    DEFAULT_CAMERA_FPS: int = Field(default=15)
-    FRAME_BUFFER_SIZE: int = Field(default=4)
-    RTSP_LATENCY_MS: int = Field(default=100)
+    MAX_CAMERAS: int = 4
+    TARGET_FPS: int = 15
+    FRAME_BUFFER_SIZE: int = 3
+    RTSP_LATENCY: int = 100
     
-    # Display settings
-    DISPLAY_WIDTH: int = Field(default=640)
-    DISPLAY_HEIGHT: int = Field(default=480)
+    # Attendance settings
+    DEDUP_INTERVAL_MINUTES: int = 60
+    ENABLE_EXIT_TRACKING: bool = False
     
     # FAISS settings
-    FAISS_INDEX_TYPE: str = Field(default="Flat")  # Flat, IVF256
-    EMBEDDING_DIMENSION: int = Field(default=512)
+    FAISS_INDEX_TYPE: str = "Flat"
+    EMBEDDING_DIMENSION: int = 512
     
     class Config:
         env_file = ".env"
@@ -59,29 +52,50 @@ class Settings(BaseSettings):
         extra = "ignore"
     
     @property
-    def detection_model_path(self) -> Path:
-        """Full path to detection model."""
-        return self.BASE_DIR / self.MODELS_DIR / self.DETECTION_MODEL
+    def database_url(self) -> str:
+        """Get PostgreSQL connection URL."""
+        return f"postgresql://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
     
     @property
-    def recognition_model_path(self) -> Path:
-        """Full path to recognition model."""
-        return self.BASE_DIR / self.MODELS_DIR / self.RECOGNITION_MODEL
+    def models_dir(self) -> Path:
+        """Get models directory path."""
+        return self.BASE_DIR / "models"
+    
+    @property
+    def data_dir(self) -> Path:
+        """Get data directory path."""
+        return self.BASE_DIR / "data"
     
     @property
     def faces_dir(self) -> Path:
-        """Directory for registered face images."""
-        return self.BASE_DIR / self.DATA_DIR / "faces"
+        """Get faces storage directory."""
+        path = self.data_dir / "faces"
+        path.mkdir(parents=True, exist_ok=True)
+        return path
     
     @property
     def embeddings_dir(self) -> Path:
-        """Directory for FAISS index files."""
-        return self.BASE_DIR / self.DATA_DIR / "embeddings"
+        """Get embeddings storage directory."""
+        path = self.data_dir / "embeddings"
+        path.mkdir(parents=True, exist_ok=True)
+        return path
     
     @property
     def logs_dir(self) -> Path:
-        """Directory for log files."""
-        return self.BASE_DIR / self.DATA_DIR / "logs"
+        """Get logs directory."""
+        path = self.data_dir / "logs"
+        path.mkdir(parents=True, exist_ok=True)
+        return path
+    
+    @property
+    def detection_model_path(self) -> Path:
+        """Get detection model path."""
+        return self.models_dir / self.DETECTION_MODEL
+    
+    @property
+    def recognition_model_path(self) -> Path:
+        """Get recognition model path."""
+        return self.models_dir / self.RECOGNITION_MODEL
 
 
 # Global settings instance

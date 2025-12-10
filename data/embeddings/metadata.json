@@ -3,13 +3,9 @@
     "0": {
       "person_id": "2024",
       "name": "Alif",
-      "faiss_id": 0
-    },
-    "1": {
-      "person_id": "2024",
-      "name": "Alif",
-      "faiss_id": 1
+      "faiss_id": 0,
+      "image_path": "C:\\Python_Projects\\Face-Re-ID-Access-Management-Attendance-System\\data\\faces\\2024_605f5838.jpg"
     }
   },
-  "next_id": 2
+  "next_id": 1
 }

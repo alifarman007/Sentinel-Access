@@ -1,0 +1,291 @@
+2025-12-10 16:29:24 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 16:29:24 | INFO     | __main__:main:366 | ==================================================
+2025-12-10 16:29:24 | INFO     | __main__:main:367 | Starting Face Re-ID Access Management System
+2025-12-10 16:29:24 | INFO     | __main__:main:368 | ==================================================
+2025-12-10 16:29:24 | INFO     | __main__:_init_core:89 | Initializing recognition pipeline...
+2025-12-10 16:29:26 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 16:29:26 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 16:29:26 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 16:29:26 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 16:29:26 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 16:29:26 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-10 16:29:26 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 16:29:26 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 16:29:28 | INFO     | __main__:_start_recognition:298 | Recognition thread started
+2025-12-10 16:29:28 | INFO     | __main__:__init__:84 | Main window initialized
+2025-12-10 16:29:28 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 16:44:26 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 16:44:26 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-10 16:44:26 | INFO     | __main__:closeEvent:358 | Application closed
+2025-12-10 16:53:50 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 16:53:50 | INFO     | __main__:main:382 | ==================================================
+2025-12-10 16:53:50 | INFO     | __main__:main:383 | Starting Face Re-ID Access Management System
+2025-12-10 16:53:50 | INFO     | __main__:main:384 | ==================================================
+2025-12-10 16:53:50 | INFO     | __main__:_init_core:90 | Initializing recognition pipeline...
+2025-12-10 16:53:52 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 16:53:52 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 16:53:52 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 16:53:52 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 16:53:52 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 16:53:52 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-10 16:53:52 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 16:53:52 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 17:01:54 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 17:01:54 | INFO     | __main__:main:382 | ==================================================
+2025-12-10 17:01:54 | INFO     | __main__:main:383 | Starting Face Re-ID Access Management System
+2025-12-10 17:01:54 | INFO     | __main__:main:384 | ==================================================
+2025-12-10 17:01:54 | INFO     | __main__:_init_core:90 | Initializing recognition pipeline...
+2025-12-10 17:01:56 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 17:01:56 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 17:01:56 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 17:01:56 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 17:01:56 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 17:01:56 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-10 17:01:56 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 17:01:56 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 17:01:57 | INFO     | __main__:_start_recognition:302 | Recognition thread started
+2025-12-10 17:01:57 | INFO     | __main__:__init__:85 | Main window initialized
+2025-12-10 17:01:57 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 18:29:46 | INFO     | gui.threads.camera_thread:_connect:125 | [registration] Connected: 640x480
+2025-12-10 18:30:01 | INFO     | gui.threads.camera_thread:stop:194 | [registration] Thread stopped
+2025-12-10 18:30:18 | INFO     | core.face_database:remove_person:275 | Removed person: 2024
+2025-12-10 18:30:18 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-10 18:30:38 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 18:30:38 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-10 18:30:38 | INFO     | __main__:closeEvent:374 | Application closed
+2025-12-10 19:10:34 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 19:10:34 | INFO     | __main__:main:647 | ==================================================
+2025-12-10 19:10:34 | INFO     | __main__:main:648 | Starting Face Re-ID Access Management System
+2025-12-10 19:10:34 | INFO     | __main__:main:649 | ==================================================
+2025-12-10 19:10:34 | INFO     | __main__:_init_core:182 | Initializing recognition pipeline...
+2025-12-10 19:10:38 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 19:10:38 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 19:10:38 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 19:10:38 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 19:10:38 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 19:10:38 | INFO     | core.face_database:_load:112 | Loaded face database: 1 persons
+2025-12-10 19:10:38 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 1 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 19:10:38 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 19:10:39 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 19:10:39 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 19:10:39 | INFO     | __main__:_start_recognition:545 | Recognition thread started
+2025-12-10 19:10:39 | INFO     | __main__:__init__:177 | Main window initialized
+2025-12-10 19:10:39 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 19:13:23 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: Main Webcam (CAM001)
+2025-12-10 19:13:26 | INFO     | gui.threads.camera_thread:_connect:125 | [CAM001] Connected: 640x480
+2025-12-10 19:13:27 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Alif (2024) - entry at 19:13:27
+2025-12-10 19:13:27 | INFO     | gui.pages.camera_view_page:_record_attendance:436 | Attendance: Alif (2024) - entry
+2025-12-10 19:13:48 | INFO     | core.face_database:remove_person:275 | Removed person: 2024
+2025-12-10 19:13:48 | INFO     | core.face_database:save:133 | Saved face database: 0 persons
+2025-12-10 19:14:27 | INFO     | gui.threads.camera_thread:stop:194 | [CAM001] Thread stopped
+2025-12-10 19:14:27 | INFO     | gui.pages.camera_view_page:_remove_camera:362 | Removed camera: CAM001
+2025-12-10 19:15:14 | INFO     | gui.threads.camera_thread:_connect:125 | [registration] Connected: 640x480
+2025-12-10 19:16:09 | INFO     | attendance.attendance_service:create_person:260 | Created person: Alif (ID: 2025)
+2025-12-10 19:16:09 | INFO     | core.face_database:add_person:180 | Added person: Alif (ID: 2025, FAISS: 2)
+2025-12-10 19:16:09 | INFO     | attendance.attendance_service:link_face_embedding:330 | Linked embedding 2 to Alif
+2025-12-10 19:16:09 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-10 19:16:15 | INFO     | gui.threads.camera_thread:stop:194 | [registration] Thread stopped
+2025-12-10 19:16:53 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: Main Webcam (CAM001)
+2025-12-10 19:16:55 | INFO     | gui.threads.camera_thread:_connect:125 | [CAM001] Connected: 640x480
+2025-12-10 19:16:55 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Alif (2025) - entry at 19:16:55
+2025-12-10 19:16:55 | INFO     | gui.pages.camera_view_page:_record_attendance:436 | Attendance: Alif (2025) - entry
+2025-12-10 19:17:48 | INFO     | gui.threads.camera_thread:stop:194 | [CAM001] Thread stopped
+2025-12-10 19:17:48 | INFO     | gui.pages.camera_view_page:_remove_camera:362 | Removed camera: CAM001
+2025-12-10 19:30:34 | INFO     | core.face_database:remove_person:275 | Removed person: 2025
+2025-12-10 19:30:34 | INFO     | core.face_database:save:133 | Saved face database: 0 persons
+2025-12-10 20:39:22 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 20:39:22 | INFO     | core.face_database:save:133 | Saved face database: 0 persons
+2025-12-10 20:39:22 | INFO     | __main__:closeEvent:639 | Application closed
+2025-12-10 20:40:10 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 20:40:10 | INFO     | __main__:main:647 | ==================================================
+2025-12-10 20:40:10 | INFO     | __main__:main:648 | Starting Face Re-ID Access Management System
+2025-12-10 20:40:10 | INFO     | __main__:main:649 | ==================================================
+2025-12-10 20:40:10 | INFO     | __main__:_init_core:182 | Initializing recognition pipeline...
+2025-12-10 20:40:12 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 20:40:12 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 20:40:12 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 20:40:12 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 20:40:12 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 20:40:12 | INFO     | core.face_database:_create_new:96 | Created new empty face database
+2025-12-10 20:40:12 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 0 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 20:40:12 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 20:40:13 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 20:40:13 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 20:40:13 | INFO     | __main__:_start_recognition:545 | Recognition thread started
+2025-12-10 20:40:13 | INFO     | __main__:__init__:177 | Main window initialized
+2025-12-10 20:40:14 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 21:02:00 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 21:02:00 | INFO     | core.face_database:save:133 | Saved face database: 0 persons
+2025-12-10 21:02:00 | INFO     | __main__:closeEvent:639 | Application closed
+2025-12-10 21:08:14 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 21:08:14 | INFO     | __main__:main:653 | ==================================================
+2025-12-10 21:08:14 | INFO     | __main__:main:654 | Starting Face Re-ID Access Management System
+2025-12-10 21:08:14 | INFO     | __main__:main:655 | ==================================================
+2025-12-10 21:08:14 | INFO     | __main__:_init_core:184 | Initializing recognition pipeline...
+2025-12-10 21:08:17 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 21:08:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 21:08:17 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 21:08:18 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 21:08:18 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 21:08:18 | INFO     | core.face_database:_create_new:96 | Created new empty face database
+2025-12-10 21:08:18 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 0 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 21:08:18 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 21:08:18 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:08:18 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:08:18 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:10:12 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 21:10:12 | INFO     | __main__:main:653 | ==================================================
+2025-12-10 21:10:12 | INFO     | __main__:main:654 | Starting Face Re-ID Access Management System
+2025-12-10 21:10:12 | INFO     | __main__:main:655 | ==================================================
+2025-12-10 21:10:12 | INFO     | __main__:_init_core:184 | Initializing recognition pipeline...
+2025-12-10 21:10:14 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 21:10:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 21:10:14 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 21:10:14 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 21:10:14 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 21:10:14 | INFO     | core.face_database:_create_new:96 | Created new empty face database
+2025-12-10 21:10:14 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 0 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 21:10:14 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 21:10:14 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:10:15 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:10:15 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:10:15 | INFO     | __main__:_start_recognition:546 | Recognition thread started
+2025-12-10 21:10:15 | INFO     | __main__:__init__:179 | Main window initialized
+2025-12-10 21:10:15 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 21:12:11 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 21:12:11 | INFO     | core.face_database:save:133 | Saved face database: 0 persons
+2025-12-10 21:12:11 | INFO     | __main__:closeEvent:645 | Application closed
+2025-12-10 21:12:16 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 21:12:16 | INFO     | __main__:main:653 | ==================================================
+2025-12-10 21:12:16 | INFO     | __main__:main:654 | Starting Face Re-ID Access Management System
+2025-12-10 21:12:16 | INFO     | __main__:main:655 | ==================================================
+2025-12-10 21:12:16 | INFO     | __main__:_init_core:184 | Initializing recognition pipeline...
+2025-12-10 21:12:17 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 21:12:17 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 21:12:17 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 21:12:17 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 21:12:17 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 21:12:17 | INFO     | core.face_database:_load:112 | Loaded face database: 0 persons
+2025-12-10 21:12:17 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 0 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 21:12:17 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 21:12:17 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:12:18 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:12:18 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:12:18 | INFO     | __main__:_start_recognition:546 | Recognition thread started
+2025-12-10 21:12:18 | INFO     | __main__:__init__:179 | Main window initialized
+2025-12-10 21:12:18 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 21:19:02 | INFO     | attendance.attendance_service:create_person:260 | Created person: Alif (ID: 2024)
+2025-12-10 21:19:02 | INFO     | core.face_database:add_person:180 | Added person: Alif (ID: 2024, FAISS: 0)
+2025-12-10 21:19:02 | INFO     | attendance.attendance_service:link_face_embedding:330 | Linked embedding 0 to Alif
+2025-12-10 21:19:02 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-10 21:19:41 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: Main Webcam (CAM0)
+2025-12-10 21:19:44 | INFO     | gui.threads.camera_thread:_connect:125 | [CAM0] Connected: 640x480
+2025-12-10 21:19:45 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Alif (2024) - entry at 21:19:45
+2025-12-10 21:19:45 | INFO     | gui.pages.camera_view_page:_record_attendance:436 | Attendance: Alif (2024) - entry
+2025-12-10 21:22:21 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 21:22:21 | INFO     | gui.threads.camera_thread:stop:194 | [CAM0] Thread stopped
+2025-12-10 21:22:21 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-10 21:22:21 | INFO     | __main__:closeEvent:645 | Application closed
+2025-12-10 21:29:06 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-10 21:29:06 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-10 21:29:06 | INFO     | gui.main_window:main:654 | Starting Face Re-ID Access Management System
+2025-12-10 21:29:06 | INFO     | gui.main_window:main:655 | ==================================================
+2025-12-10 21:29:06 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-10 21:29:09 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-10 21:29:09 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-10 21:29:09 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-10 21:29:10 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-10 21:29:10 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-10 21:29:10 | INFO     | core.face_database:_load:112 | Loaded face database: 1 persons
+2025-12-10 21:29:10 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 1 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-10 21:29:10 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-10 21:29:10 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:29:11 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:29:11 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-10 21:29:11 | INFO     | gui.main_window:_start_recognition:546 | Recognition thread started
+2025-12-10 21:29:11 | INFO     | gui.main_window:__init__:179 | Main window initialized
+2025-12-10 21:29:11 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-10 21:29:40 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-10 21:29:40 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-10 21:29:40 | INFO     | gui.main_window:closeEvent:645 | Application closed
