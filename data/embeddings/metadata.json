@@ -5,7 +5,13 @@
       "name": "Alif",
       "faiss_id": 0,
       "image_path": "C:\\Python_Projects\\Face-Re-ID-Access-Management-Attendance-System\\data\\faces\\2024_605f5838.jpg"
+    },
+    "1": {
+      "person_id": "2005",
+      "name": "Sufi",
+      "faiss_id": 1,
+      "image_path": "C:\\Python_Projects\\Face-Re-ID-Access-Management-Attendance-System\\data\\faces\\2005_f68c055b.jpg"
     }
   },
-  "next_id": 1
+  "next_id": 2
 }

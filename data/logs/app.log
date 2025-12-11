@@ -289,3 +289,530 @@
 2025-12-10 21:29:40 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
 2025-12-10 21:29:40 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
 2025-12-10 21:29:40 | INFO     | gui.main_window:closeEvent:645 | Application closed
+2025-12-11 11:57:59 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 11:57:59 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 11:57:59 | INFO     | gui.main_window:main:654 | Starting Face Re-ID Access Management System
+2025-12-11 11:57:59 | INFO     | gui.main_window:main:655 | ==================================================
+2025-12-11 11:57:59 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 11:58:03 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 11:58:03 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 11:58:03 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 11:58:03 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 11:58:03 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 11:58:03 | INFO     | core.face_database:_load:112 | Loaded face database: 1 persons
+2025-12-11 11:58:03 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 1 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 11:58:03 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 11:58:03 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 11:58:05 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 11:58:05 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 11:58:05 | INFO     | gui.main_window:_start_recognition:546 | Recognition thread started
+2025-12-11 11:58:05 | INFO     | gui.main_window:__init__:179 | Main window initialized
+2025-12-11 11:58:05 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-11 11:59:48 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: webcam main (cam1)
+2025-12-11 11:59:53 | INFO     | gui.threads.camera_thread:_connect:125 | [cam1] Connected: 640x480
+2025-12-11 11:59:55 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Alif (2024) - entry at 11:59:55
+2025-12-11 11:59:55 | INFO     | gui.pages.camera_view_page:_record_attendance:436 | Attendance: Alif (2024) - entry
+2025-12-11 12:01:17 | INFO     | gui.threads.camera_thread:stop:194 | [cam1] Thread stopped
+2025-12-11 12:01:17 | INFO     | gui.pages.camera_view_page:_remove_camera:362 | Removed camera: cam1
+2025-12-11 12:01:25 | INFO     | gui.threads.camera_thread:_connect:125 | [registration] Connected: 640x480
+2025-12-11 12:02:01 | INFO     | attendance.attendance_service:create_person:260 | Created person: Sufi (ID: 2005)
+2025-12-11 12:02:01 | INFO     | core.face_database:add_person:180 | Added person: Sufi (ID: 2005, FAISS: 1)
+2025-12-11 12:02:01 | INFO     | attendance.attendance_service:link_face_embedding:330 | Linked embedding 1 to Sufi
+2025-12-11 12:02:01 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 12:02:07 | INFO     | gui.threads.camera_thread:stop:194 | [registration] Thread stopped
+2025-12-11 12:02:18 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: web (cam)
+2025-12-11 12:02:24 | INFO     | gui.threads.camera_thread:_connect:125 | [cam] Connected: 640x480
+2025-12-11 12:02:24 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Sufi (2005) - entry at 12:02:24
+2025-12-11 12:02:24 | INFO     | gui.pages.camera_view_page:_record_attendance:436 | Attendance: Sufi (2005) - entry
+2025-12-11 12:13:51 | INFO     | gui.threads.camera_thread:stop:194 | [cam] Thread stopped
+2025-12-11 12:13:51 | INFO     | gui.pages.camera_view_page:_remove_camera:362 | Removed camera: cam
+2025-12-11 12:27:48 | INFO     | gui.threads.recognition_thread:run:151 | Recognition thread stopped
+2025-12-11 12:27:48 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 12:27:48 | INFO     | gui.main_window:closeEvent:645 | Application closed
+2025-12-11 13:06:26 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:06:26 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:06:26 | INFO     | gui.main_window:main:654 | Starting Face Re-ID Access Management System
+2025-12-11 13:06:26 | INFO     | gui.main_window:main:655 | ==================================================
+2025-12-11 13:06:26 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:06:30 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:06:30 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:06:30 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:06:30 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:06:30 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:06:30 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:06:30 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:06:30 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:06:30 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:06:34 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:06:34 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:06:34 | INFO     | gui.main_window:_start_recognition:546 | Recognition thread started
+2025-12-11 13:06:34 | INFO     | gui.main_window:__init__:179 | Main window initialized
+2025-12-11 13:06:34 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-11 13:09:54 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: ipcam (vigi1)
+2025-12-11 13:09:54 | WARNING  | gui.threads.camera_thread:_connect:104 | [vigi1] NVIDIA failed, trying CPU...
+2025-12-11 13:09:54 | WARNING  | gui.threads.camera_thread:_connect:109 | [vigi1] GStreamer failed, trying direct...
+2025-12-11 13:09:56 | INFO     | gui.threads.camera_thread:_connect:125 | [vigi1] Connected: 3840x2160
+2025-12-11 13:13:36 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:13:36 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:13:36 | INFO     | gui.main_window:main:654 | Starting Face Re-ID Access Management System
+2025-12-11 13:13:36 | INFO     | gui.main_window:main:655 | ==================================================
+2025-12-11 13:13:36 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:13:39 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:13:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:13:39 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:13:39 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:13:39 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:13:39 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:13:39 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:13:39 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:13:39 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:13:40 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:13:40 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:13:40 | INFO     | gui.main_window:_start_recognition:546 | Recognition thread started
+2025-12-11 13:13:40 | INFO     | gui.main_window:__init__:179 | Main window initialized
+2025-12-11 13:13:40 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-11 13:14:54 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: ipcam1 (cam1)
+2025-12-11 13:14:54 | WARNING  | gui.threads.camera_thread:_connect:104 | [cam1] NVIDIA failed, trying CPU...
+2025-12-11 13:14:54 | WARNING  | gui.threads.camera_thread:_connect:109 | [cam1] GStreamer failed, trying direct...
+2025-12-11 13:15:22 | INFO     | gui.threads.camera_thread:stop:194 | [cam1] Thread stopped
+2025-12-11 13:15:22 | INFO     | gui.pages.camera_view_page:_remove_camera:362 | Removed camera: cam1
+2025-12-11 13:15:55 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:15:55 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:15:55 | INFO     | gui.main_window:main:654 | Starting Face Re-ID Access Management System
+2025-12-11 13:15:55 | INFO     | gui.main_window:main:655 | ==================================================
+2025-12-11 13:15:55 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:15:55 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:15:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:15:55 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:15:56 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:15:56 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:15:56 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:15:56 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:15:56 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:15:56 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:15:56 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:15:56 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:15:56 | INFO     | gui.main_window:_start_recognition:546 | Recognition thread started
+2025-12-11 13:15:56 | INFO     | gui.main_window:__init__:179 | Main window initialized
+2025-12-11 13:15:56 | INFO     | gui.threads.recognition_thread:run:98 | Recognition thread started
+2025-12-11 13:17:03 | INFO     | gui.pages.camera_view_page:_add_camera:314 | Added camera: ip1 (c1)
+2025-12-11 13:17:03 | WARNING  | gui.threads.camera_thread:_connect:104 | [c1] NVIDIA failed, trying CPU...
+2025-12-11 13:17:03 | WARNING  | gui.threads.camera_thread:_connect:109 | [c1] GStreamer failed, trying direct...
+2025-12-11 13:17:05 | INFO     | gui.threads.camera_thread:_connect:125 | [c1] Connected: 3840x2160
+2025-12-11 13:36:12 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:36:12 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 13:36:12 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 13:36:12 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:36:12 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:36:16 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:36:16 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:36:16 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:36:16 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:36:16 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:36:16 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:36:16 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:36:16 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:36:16 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:36:17 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:36:17 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:36:17 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:36:17 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 13:36:17 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 13:36:17 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:36:21 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:36:21 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:36:21 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 13:36:21 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 13:37:21 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:37:21 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 13:37:21 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 13:37:21 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:37:21 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:37:24 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:37:24 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:37:24 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:37:24 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:37:24 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:37:24 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:37:24 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:37:24 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:37:24 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:37:25 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:37:25 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:37:25 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:37:25 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 13:37:25 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 13:37:25 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:38:37 | INFO     | gui.pages.camera_view_page:_add_camera:281 | Added camera: ip1 (cam1)
+2025-12-11 13:38:37 | INFO     | gui.threads.optimized_camera_thread:_connect:129 | [cam1] Trying GStreamer pipeline...
+2025-12-11 13:38:37 | INFO     | gui.threads.optimized_camera_thread:_connect:147 | [cam1] Trying direct OpenCV...
+2025-12-11 13:38:39 | INFO     | gui.threads.optimized_camera_thread:_connect:155 | [cam1] Direct OpenCV connected: 3840x2160 (will resize)
+2025-12-11 13:42:13 | INFO     | gui.threads.optimized_camera_thread:_connect:129 | [cam1] Trying GStreamer pipeline...
+2025-12-11 13:42:13 | INFO     | gui.threads.optimized_camera_thread:_connect:147 | [cam1] Trying direct OpenCV...
+2025-12-11 13:44:18 | ERROR    | gui.pages.camera_view_page:_on_error:413 | [cam1] Failed to connect to camera
+2025-12-11 13:44:21 | INFO     | gui.threads.optimized_camera_thread:_connect:129 | [cam1] Trying GStreamer pipeline...
+2025-12-11 13:44:21 | INFO     | gui.threads.optimized_camera_thread:_connect:147 | [cam1] Trying direct OpenCV...
+2025-12-11 13:46:25 | ERROR    | gui.pages.camera_view_page:_on_error:413 | [cam1] Failed to connect to camera
+2025-12-11 13:46:29 | INFO     | gui.threads.optimized_camera_thread:_connect:129 | [cam1] Trying GStreamer pipeline...
+2025-12-11 13:46:29 | INFO     | gui.threads.optimized_camera_thread:_connect:147 | [cam1] Trying direct OpenCV...
+2025-12-11 13:47:36 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:47:39 | INFO     | gui.threads.optimized_camera_thread:stop:251 | [cam1] Thread stopped
+2025-12-11 13:47:39 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:47:39 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 13:47:39 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 13:51:35 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:51:35 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 13:51:35 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 13:51:35 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:51:35 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:51:39 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:51:39 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:51:39 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:51:39 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:51:39 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:51:39 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:51:39 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:51:39 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:51:39 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:51:41 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:51:41 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:51:41 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:51:41 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 13:51:41 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 13:51:42 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:52:50 | INFO     | gui.pages.camera_view_page:_add_camera:281 | Added camera: ip1 (cam1)
+2025-12-11 13:52:50 | INFO     | gui.threads.production_camera_thread:_connect:202 | [cam1] Trying OpenCV FFmpeg with TCP...
+2025-12-11 13:52:59 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:53:04 | INFO     | gui.threads.production_camera_thread:stop:318 | [cam1] Stopped
+2025-12-11 13:53:04 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:53:04 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 13:53:04 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 13:54:07 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:54:07 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 13:54:07 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 13:54:07 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:54:07 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:54:10 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:54:10 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:54:10 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:54:10 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:54:10 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:54:10 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:54:10 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:54:10 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:54:10 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:54:11 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:54:11 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:54:11 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:54:11 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 13:54:11 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 13:54:12 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:54:51 | INFO     | gui.pages.camera_view_page:_add_camera:281 | Added camera: ip1 (c1)
+2025-12-11 13:54:51 | INFO     | gui.threads.production_camera_thread:_connect:202 | [c1] Trying OpenCV FFmpeg with TCP...
+2025-12-11 13:54:53 | INFO     | gui.threads.production_camera_thread:_connect:208 | [c1] Trying GStreamer with TCP...
+2025-12-11 13:54:53 | ERROR    | gui.pages.camera_view_page:_on_error:413 | [c1] Connection failed
+2025-12-11 13:55:52 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:55:52 | INFO     | gui.threads.production_camera_thread:stop:318 | [c1] Stopped
+2025-12-11 13:55:52 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:55:52 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 13:55:52 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 13:55:58 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 13:55:58 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 13:55:58 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 13:55:58 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 13:55:58 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 13:55:59 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 13:55:59 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 13:55:59 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 13:55:59 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 13:55:59 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 13:55:59 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 13:55:59 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 13:55:59 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 13:55:59 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:56:00 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:56:00 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:56:00 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 13:56:00 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 13:56:00 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 13:56:00 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 13:56:28 | INFO     | gui.pages.camera_view_page:_add_camera:281 | Added camera: ip1 (c2)
+2025-12-11 13:56:28 | INFO     | gui.threads.production_camera_thread:_connect:202 | [c2] Trying OpenCV FFmpeg with TCP...
+2025-12-11 13:56:30 | INFO     | gui.threads.production_camera_thread:_connect:208 | [c2] Trying GStreamer with TCP...
+2025-12-11 13:56:30 | ERROR    | gui.pages.camera_view_page:_on_error:413 | [c2] Connection failed
+2025-12-11 13:59:50 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:59:50 | INFO     | gui.threads.production_camera_thread:stop:318 | [c2] Stopped
+2025-12-11 13:59:50 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 13:59:50 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 13:59:50 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 14:30:11 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 14:30:11 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 14:30:11 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 14:30:11 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 14:30:11 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 14:30:14 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 14:30:14 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 14:30:14 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 14:30:14 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 14:30:14 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 14:30:14 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 14:30:14 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 14:30:14 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 14:30:14 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 14:30:17 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 14:30:18 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 14:30:18 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 14:30:18 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 14:30:18 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 14:30:44 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 14:30:44 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 14:30:44 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 14:31:32 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 14:31:32 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 14:31:32 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 14:31:32 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 14:31:32 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 14:31:34 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 14:31:34 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 14:31:34 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 14:31:34 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 14:31:34 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 14:31:34 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 14:31:34 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 14:31:34 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 14:31:34 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 14:31:35 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 14:31:35 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 14:31:35 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 14:31:35 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 14:31:35 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 14:32:00 | INFO     | gui.pages.camera_view_page:_add_camera:231 | Adding camera: ip1, source: rtsp://admin:123456@172.16.9.144:554/stream1
+2025-12-11 14:32:00 | INFO     | gui.pages.camera_view_page:_add_camera:266 | Camera ip thread started
+2025-12-11 14:32:00 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 14:32:01 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [ip] Connected! Frame: 3840x2160
+2025-12-11 14:32:30 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Alif (2024) - entry at 14:32:30
+2025-12-11 14:32:30 | INFO     | gui.pages.camera_view_page:_record_attendance:373 | Attendance: Alif
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (1)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (2)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (3)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (4)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (5)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (6)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (7)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (8)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (9)
+2025-12-11 15:22:53 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (10)
+2025-12-11 15:22:53 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:22:56 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:24:59 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:24:59 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (11)
+2025-12-11 15:24:59 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:24:59 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:25:02 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:27:06 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:27:06 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (12)
+2025-12-11 15:27:06 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:27:06 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:27:11 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:29:14 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:29:14 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (13)
+2025-12-11 15:29:14 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:29:14 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:29:21 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:31:24 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:31:24 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (14)
+2025-12-11 15:31:24 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:31:24 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:31:34 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:33:17 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:33:17 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (15)
+2025-12-11 15:33:17 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:33:17 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:33:32 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:34:02 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:34:02 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (16)
+2025-12-11 15:34:02 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:34:02 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:34:25 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:34:55 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:34:55 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (17)
+2025-12-11 15:34:55 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:34:55 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:35:25 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [ip] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:35:56 | ERROR    | gui.threads.simple_camera_thread:_connect:78 | [ip] Failed to open capture
+2025-12-11 15:35:56 | WARNING  | gui.threads.simple_camera_thread:run:162 | [ip] Read failed (18)
+2025-12-11 15:35:56 | ERROR    | gui.pages.camera_view_page:_on_error:392 | [ip] Cannot open stream
+2025-12-11 15:35:56 | ERROR    | gui.threads.simple_camera_thread:run:165 | [ip] Too many errors, reconnecting...
+2025-12-11 15:36:20 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 15:36:25 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 15:36:25 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-11 15:40:52 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-11 15:40:52 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-11 15:40:52 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-11 15:40:52 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-11 15:40:52 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-11 15:40:55 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-11 15:40:55 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-11 15:40:55 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-11 15:40:55 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-11 15:40:55 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-11 15:40:55 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-11 15:40:55 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-11 15:40:55 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-11 15:40:55 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 15:40:56 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 15:40:56 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-11 15:40:56 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-11 15:40:56 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-11 15:40:56 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-11 15:41:27 | INFO     | gui.pages.camera_view_page:_add_camera:231 | Adding camera: webcsm, source: 0
+2025-12-11 15:41:27 | INFO     | gui.pages.camera_view_page:_add_camera:266 | Camera cam1 thread started
+2025-12-11 15:41:27 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [cam1] Connecting to: 0...
+2025-12-11 15:41:31 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [cam1] Connected! Frame: 640x480
+2025-12-11 15:41:32 | INFO     | attendance.attendance_service:record_attendance:127 | Attendance recorded: Alif (2024) - entry at 15:41:32
+2025-12-11 15:41:32 | INFO     | gui.pages.camera_view_page:_record_attendance:373 | Attendance: Alif
+2025-12-11 15:43:31 | INFO     | gui.threads.simple_camera_thread:run:215 | [cam1] Thread stopped
+2025-12-11 15:44:07 | INFO     | gui.pages.camera_view_page:_add_camera:231 | Adding camera: vigi1, source: rtsp://admin:123456@172.16.9.144:554/stream1
+2025-12-11 15:44:07 | INFO     | gui.pages.camera_view_page:_add_camera:266 | Camera vigi1 thread started
+2025-12-11 15:44:07 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [vigi1] Connecting to: rtsp://admin:123456@172.16.9.144:554/stream1...
+2025-12-11 15:44:09 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [vigi1] Connected! Frame: 3840x2160
+2025-12-11 15:46:11 | INFO     | gui.pages.camera_view_page:_add_camera:231 | Adding camera: vigi2, source: rtsp://admin:123456@172.16.9.160:554/stream1
+2025-12-11 15:46:11 | INFO     | gui.pages.camera_view_page:_add_camera:266 | Camera vigi2 thread started
+2025-12-11 15:46:11 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [vigi2] Connecting to: rtsp://admin:123456@172.16.9.160:554/stream1...
+2025-12-11 15:46:13 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [vigi2] Connected! Frame: 3840x2160
+2025-12-11 15:50:55 | INFO     | gui.pages.camera_view_page:_add_camera:231 | Adding camera: webcam1, source: 0
+2025-12-11 15:50:55 | INFO     | gui.pages.camera_view_page:_add_camera:266 | Camera cam1 thread started
+2025-12-11 15:50:55 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [cam1] Connecting to: 0...
+2025-12-11 15:51:02 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [cam1] Connected! Frame: 640x480
+2025-12-11 15:52:03 | INFO     | gui.pages.camera_view_page:_add_camera:231 | Adding camera: webcam2, source: 1
+2025-12-11 15:52:03 | INFO     | gui.pages.camera_view_page:_add_camera:266 | Camera webcam2 thread started
+2025-12-11 15:52:03 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [webcam2] Connecting to: 1...
+2025-12-11 15:52:09 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [webcam2] Connected! Frame: 640x480
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (1)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (2)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (3)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (4)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (5)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (6)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (7)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (8)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (9)
+2025-12-11 15:52:09 | WARNING  | gui.threads.simple_camera_thread:run:162 | [cam1] Read failed (10)
+2025-12-11 15:52:09 | ERROR    | gui.threads.simple_camera_thread:run:165 | [cam1] Too many errors, reconnecting...
+2025-12-11 15:52:11 | INFO     | gui.threads.simple_camera_thread:_connect:62 | [cam1] Connecting to: 0...
+2025-12-11 15:52:17 | INFO     | gui.threads.simple_camera_thread:_connect:97 | [cam1] Connected! Frame: 1280x720
+2025-12-11 15:59:16 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-11 15:59:16 | INFO     | gui.threads.simple_camera_thread:run:215 | [vigi1] Thread stopped
+2025-12-11 15:59:16 | INFO     | gui.threads.simple_camera_thread:run:215 | [vigi2] Thread stopped
+2025-12-11 15:59:17 | INFO     | gui.threads.simple_camera_thread:run:215 | [cam1] Thread stopped
+2025-12-11 15:59:17 | INFO     | gui.threads.simple_camera_thread:run:215 | [webcam2] Thread stopped
+2025-12-11 15:59:17 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
+2025-12-11 15:59:17 | INFO     | gui.main_window:closeEvent:643 | Application closed

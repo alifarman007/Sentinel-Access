@@ -18,7 +18,8 @@ from PySide6.QtGui import QFont
 from config.logging_config import logger, setup_logging
 from config.settings import settings
 from core.recognition_pipeline import RecognitionPipeline
-from gui.threads.recognition_thread import RecognitionThread
+#from gui.threads.recognition_thread import RecognitionThread
+from gui.threads.optimized_recognition_thread import OptimizedRecognitionThread
 from gui.pages.add_person_page import AddPersonPage
 from gui.pages.camera_view_page import CameraViewPage
 from gui.pages.attendance_page import AttendancePage
@@ -180,17 +181,14 @@ class MainWindow(QMainWindow):
     
     def _init_core(self):
         """Initialize core components."""
-        # Recognition pipeline (shared)
         logger.info("Initializing recognition pipeline...")
         self.pipeline = RecognitionPipeline(use_gpu=settings.USE_GPU)
         
-        # Recognition thread
-        self.recognition_thread = RecognitionThread(
-            pipeline=self.pipeline,
-            max_queue_size=10
+        # Use optimized recognition thread
+        self.recognition_thread = OptimizedRecognitionThread(
+            pipeline=self.pipeline
         )
         
-        # Update initial status
         self._status_info['persons'] = self.pipeline.database.get_count()
     
     def _setup_ui(self):
