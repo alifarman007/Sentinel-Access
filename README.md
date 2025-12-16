@@ -12,7 +12,7 @@
 
 ## 👁️ Visual Demo
 
-![Sentinel Access Demo](assets/demo.gif)
+![Sentinel Access Demo](ai_face_recognition.gif)
 
 *System demonstrating <100ms inference speed and successful identification despite partial face occlusion.*
 
@@ -83,9 +83,8 @@ python main.py
 
 I help companies move from "Proof of Concept" to "Production-Ready" AI systems. If you need a custom implementation of this architecture or other Vision systems:
 
-* **Connect on LinkedIn:** [Your LinkedIn URL]
-* **View Portfolio:** [Your Portfolio Website URL]
-* **Email:** [Your Email Address]
+* **Connect on LinkedIn:** https://www.linkedin.com/in/alifarman07/
+* **Email:** alifarman.3027@gmail.com
 
 ---
 
