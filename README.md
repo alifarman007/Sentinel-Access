@@ -47,6 +47,8 @@ Standard Python libraries (like `dlib` or `face_recognition`) fail in real-world
 * **Database:** PostgreSQL
 
 ---
+![Sentinel Access Demo Image](access_control.png)
+---
 
 ## Installation & Usage **Prerequisites:**  Python 3.11+, CUDA (optional but recommended).
 
