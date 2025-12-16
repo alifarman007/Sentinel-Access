@@ -816,3 +816,36 @@
 2025-12-11 15:59:17 | INFO     | gui.threads.simple_camera_thread:run:215 | [webcam2] Thread stopped
 2025-12-11 15:59:17 | INFO     | core.face_database:save:133 | Saved face database: 2 persons
 2025-12-11 15:59:17 | INFO     | gui.main_window:closeEvent:643 | Application closed
+2025-12-16 22:44:41 | INFO     | config.logging_config:setup_logging:53 | Logging configured - Level: INFO, File: True
+2025-12-16 22:44:41 | INFO     | gui.main_window:main:651 | ==================================================
+2025-12-16 22:44:41 | INFO     | gui.main_window:main:652 | Starting Face Re-ID Access Management System
+2025-12-16 22:44:41 | INFO     | gui.main_window:main:653 | ==================================================
+2025-12-16 22:44:41 | INFO     | gui.main_window:_init_core:184 | Initializing recognition pipeline...
+2025-12-16 22:44:45 | INFO     | core.face_detector:_create_session:125 | Using provider: CUDAExecutionProvider
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:87 | Model has 9 outputs:
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [0] 448: [12800, 1]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [1] 471: [3200, 1]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [2] 494: [800, 1]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [3] 451: [12800, 4]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [4] 474: [3200, 4]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [5] 497: [800, 4]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [6] 454: [12800, 10]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [7] 477: [3200, 10]
+2025-12-16 22:44:45 | INFO     | core.face_detector:_analyze_outputs:89 |   [8] 500: [800, 10]
+2025-12-16 22:44:45 | INFO     | core.face_detector:__init__:79 | FaceDetector initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\det_10g.onnx, input_size=(640, 640), gpu=True
+2025-12-16 22:44:45 | INFO     | core.face_recognizer:_create_session:88 | Recognizer using provider: CUDAExecutionProvider
+2025-12-16 22:44:45 | INFO     | core.face_recognizer:__init__:54 | FaceRecognizer initialized: model=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\models\w600k_r50.onnx, input_size=(112, 112), gpu=True
+2025-12-16 22:44:45 | INFO     | core.face_database:_load:112 | Loaded face database: 2 persons
+2025-12-16 22:44:45 | INFO     | core.face_database:__init__:73 | FaceDatabase initialized: 2 persons, dimension=512, path=C:\Python_Projects\Face-Re-ID-Access-Management-Attendance-System\data\embeddings
+2025-12-16 22:44:45 | INFO     | core.recognition_pipeline:__init__:72 | RecognitionPipeline initialized
+2025-12-16 22:44:45 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-16 22:44:48 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-16 22:44:48 | INFO     | attendance.attendance_service:__init__:44 | AttendanceService initialized: dedup=60min, exit_tracking=False
+2025-12-16 22:44:48 | INFO     | gui.main_window:_start_recognition:544 | Recognition thread started
+2025-12-16 22:44:48 | INFO     | gui.main_window:__init__:180 | Main window initialized
+2025-12-16 22:44:48 | INFO     | gui.threads.optimized_recognition_thread:run:81 | Optimized recognition thread started
+2025-12-16 22:45:45 | INFO     | core.face_database:remove_person:275 | Removed person: 2024
+2025-12-16 22:45:45 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-16 23:01:36 | INFO     | gui.threads.optimized_recognition_thread:run:135 | Optimized recognition thread stopped
+2025-12-16 23:01:36 | INFO     | core.face_database:save:133 | Saved face database: 1 persons
+2025-12-16 23:01:36 | INFO     | gui.main_window:closeEvent:643 | Application closed
