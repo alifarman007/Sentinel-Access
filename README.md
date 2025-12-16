@@ -29,7 +29,7 @@ Standard Python libraries (like `dlib` or `face_recognition`) fail in real-world
 3.  **Embedding:** Passes the aligned face through a fine-tuned model to generate a 512-dimensional vector.
 4.  **Matching:** Uses Cosine Similarity for identity verification, significantly outperforming Euclidean distance methods in high-dimensional space.
 
-### 📊 Performance Benchmarks
+### Performance Benchmarks
 
 | Metric | Standard FaceID Libs | Sentinel-Access |
 | :--- | :--- | :--- |
@@ -48,7 +48,7 @@ Standard Python libraries (like `dlib` or `face_recognition`) fail in real-world
 
 ---
 
-##💻 Installation & Usage**Prerequisites:** Python 3.11+, CUDA (optional but recommended).
+## Installation & Usage **Prerequisites:**  Python 3.11+, CUDA (optional but recommended).
 
 1. **Clone the Repository**
 ```bash
@@ -71,7 +71,7 @@ python main.py
 
 ```
 
-## Commercial ApplicationThis system is designed for high-security and high-throughput environments:
+## Commercial Application: This system is designed for high-security and high-throughput environments:
 
 * **Corporate Offices:** Frictionless, touch-free attendance logging.
 * **Construction Sites:** Verifying identity of workers wearing safety gear.
@@ -79,7 +79,7 @@ python main.py
 
 ---
 
-## Author & Services**I am an AI Engineer specializing in Computer Vision and Edge Deployment.**
+## Author & Services:**  I am an AI Engineer specializing in Computer Vision and Edge Deployment.**
 
 I help companies move from "Proof of Concept" to "Production-Ready" AI systems. If you need a custom implementation of this architecture or other Vision systems:
 
