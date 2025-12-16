@@ -10,7 +10,7 @@
 
 ---
 
-## 👁️ Visual Demo
+## 👁️ Advance Recognition Demo
 
 ![Sentinel Access Demo](ai_face_recognition.gif)
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 🚀 The Engineering Challenge
+## The Engineering Challenge
 
 Standard Python libraries (like `dlib` or `face_recognition`) fail in real-world deployments. They struggle with side profiles, low light, and accessories.
 
@@ -71,7 +71,7 @@ python main.py
 
 ```
 
-##💼 Commercial ApplicationThis system is designed for high-security and high-throughput environments:
+## Commercial ApplicationThis system is designed for high-security and high-throughput environments:
 
 * **Corporate Offices:** Frictionless, touch-free attendance logging.
 * **Construction Sites:** Verifying identity of workers wearing safety gear.
@@ -79,7 +79,7 @@ python main.py
 
 ---
 
-##👨‍💻 Author & Services**I am an AI Engineer specializing in Computer Vision and Edge Deployment.**
+## Author & Services**I am an AI Engineer specializing in Computer Vision and Edge Deployment.**
 
 I help companies move from "Proof of Concept" to "Production-Ready" AI systems. If you need a custom implementation of this architecture or other Vision systems:
 
