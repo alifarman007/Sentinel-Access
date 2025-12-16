@@ -79,7 +79,7 @@ python main.py
 
 ---
 
-## Author & Services:**  I am an AI Engineer specializing in Computer Vision and Edge Deployment.**
+## Author & Services:  I am an AI Engineer specializing in Computer Vision and Edge Deployment.
 
 I help companies move from "Proof of Concept" to "Production-Ready" AI systems. If you need a custom implementation of this architecture or other Vision systems:
 
