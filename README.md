@@ -39,6 +39,8 @@ Standard Python libraries (like `dlib` or `face_recognition`) fail in real-world
 | **Inference Latency** | ~400ms | **<100ms** (GPU) |
 
 ---
+![Sentinel Access Demo Image](access_control.png)
+---
 
 * **Core Engine:** PyTorch, TorchVision
 * **Backbone:** ResNet-50 (Pre-trained, Fine-tuned)
@@ -46,8 +48,6 @@ Standard Python libraries (like `dlib` or `face_recognition`) fail in real-world
 * **UI/Dashboard:** PyQt5
 * **Database:** PostgreSQL
 
----
-![Sentinel Access Demo Image](access_control.png)
 ---
 
 ## Installation & Usage **Prerequisites:**  Python 3.11+, CUDA (optional but recommended).
